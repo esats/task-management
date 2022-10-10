@@ -1,7 +1,7 @@
-1- Written by backend: .net 5.
-2- frontend: angular 14
-2- Database: sqlite. \
-3- localhost:PORT/swagger\
+1- Written by backend: .net 5. \
+2- frontend: angular 14 \
+3- Database: sqlite. \
+4- localhost:PORT/swagger\
 \
 \
 How to run:\
