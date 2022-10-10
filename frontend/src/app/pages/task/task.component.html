@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="task-header-buttons">
+        <button class="back-button" (click)="back()">Back</button>
+        <button class="edit-button" (click)="editTask()">Edit</button>
+    </div>
+    <div class="task-header">
+        {{task?.title}}
+    </div>
+    <div class="task-content">
+        <div class="task-assigned-user">
+            <mat-icon style="margin-right: 10px;">account_circle</mat-icon>
+            {{task?.user?.name}} {{task?.user?.surname}}
+        </div>
+        <p>{{task?.description}}</p>
+    </div>
+    <div class="comments">
+        <h1>Comments</h1>
+        <div class="comments-form">
+            <input type="text" [placeholder]="user.name" disabled>
+            <textarea cols="30" rows="10" 
+                placeholder="Your comment" [(ngModel)]="commentForm.content"></textarea>
+            <button (click)="addComment()">Send</button>
+        </div>
+        <div class="comments-item" *ngFor="let comment of task?.comments">
+            <h2>{{comment.userName}}</h2>
+            <p>{{comment.content}}</p>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,631 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    outline: none;
+    border: none;
+}
+
+body { background-color: #f4f5f7; }
+
+.bg-1 { background-color: #f4f5f7; }
+.bg-2 { background-color: #2d3640;}
+
+.container {
+    margin: 0px auto;
+    padding: 30px;
+    max-width: 700px;
+    width: 100%;
+}
+
+.home-logo {
+    display: block;
+    margin: 0px auto 20px auto;
+    width: 30px;
+    cursor: pointer;
+}
+
+/* userForm */
+.user-form {
+    max-width: 500px;
+    margin: 0px auto;
+    width: 100%;
+}
+
+.user-form-header {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    background-color: #2d3640;
+    text-align: center;
+    font-size: 24px;
+    color: #f4f5f7;
+    padding: 24px 0px;
+}
+
+.user-form-content {
+    background-color: #ffffff;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    padding: 20px;
+    overflow: auto;
+}
+
+.user-form-content input {
+    border: 2px solid #f4f5f7;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    display: block;
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    transition: 0.8s;
+}
+
+.user-form-content input:hover {
+    border-color: #2d3640;
+}
+
+.user-form-content input:focus {
+    border-color: #2d3640;
+}
+
+.user-form-content button {
+    border: 2px solid #EC7063;
+    background-color: #f4f5f7;
+    color: #EC7063;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 16px;
+    padding: 12px 18px;
+    transition: 0.8s;
+    width: 100%;
+}
+
+.user-form-content button:hover {
+    background-color: #EC7063;
+    color: #f4f5f7;
+}
+
+/* Tasks */
+.tasks-header {
+    border-radius: 20px;
+    text-align: left;
+    font-size: 24px;
+    color: #f4f5f7;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.tasks-header button {
+    background-color: #2d3640;
+    color: #f4f5f7;
+    border-radius: 10px;
+    padding: 10px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.tasks-header-buttons {
+    margin-bottom: 20px;
+}
+
+.tasks-header-buttons button {
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10px;
+    padding: 10px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.8s;
+    width: 100%;
+}
+
+.tasks-header-buttons button {
+    border-color: #EC7063;
+}
+
+.tasks-header-buttons button:hover {
+    background-color: #EC7063;
+    color: #f4f5f7;
+}
+
+.tasks-item {
+    background-color: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+    padding: 30px;
+    transition: 0.8s;
+    cursor: pointer;
+    margin-bottom: 20px;
+    overflow: auto;
+}
+
+.tasks-item:hover {
+    border-color: #EC7063;
+}
+
+.assign-button {
+    float: right;
+}
+
+.tasks-item h2 {
+    font-weight: normal;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.tasks-item p {
+    display: block;
+    text-indent: 20px;
+    text-align: justify;
+    font-size: 16px;
+}
+
+/* Task */
+.task-header {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    background-color: #2d3640;
+    text-align: left;
+    font-size: 24px;
+    color: #f4f5f7;
+    padding: 24px;
+}
+
+.task-header-buttons {
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.task-header-buttons .back-button {
+    padding: 10px 18px;
+    border: 1px solid #EC7063;
+    border-radius: 10px;
+    transition: 0.8s;
+    font-size: px;
+    cursor: pointer;
+}
+
+.task-header-buttons .back-button:hover {
+    background-color: #EC7063;
+    color: #f4f5f7;
+}
+
+.task-header-buttons .edit-button {
+    padding: 10px 18px;
+    border: 1px solid #2d3640;
+    border-radius: 10px;
+    transition: 0.8s;
+    font-size: px;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.task-header-buttons .edit-button:hover {
+    background-color: #2d3640;
+    color: #f4f5f7;
+}
+
+.task-content {
+    background-color: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+    padding: 30px;
+    transition: 0.8s;
+    cursor: pointer;
+    margin-bottom: 60px;
+    font-size: 16px;
+}
+
+.task-assigned-user {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-bottom: 20px;    
+}
+
+.comments h1 {
+    font-weight: normal;
+    font-size: 30px;
+}
+
+.comments-form {
+    margin: 20px 0px 40px 0px;
+    overflow: auto;
+}
+
+.comments-form input {
+    margin-bottom: 10px;    
+    padding: 15px;
+    width: 100%;
+    border: 2px solid #ffffff;
+    background-color: #ffffff;
+    transition: 0.8s;
+}
+
+.comments-form input:hover {
+    border-color: #2d3640 ;
+}
+
+.comments-form input:focus {
+    border-color: #2d3640 ;
+}
+
+.comments-form textarea {
+    border: 2px solid #ffffff;
+    background-color: #ffffff;
+    margin-bottom: 10px;
+    padding: 15px;
+    transition: 0.8s;
+    width: 100%;
+}
+
+.comments-form textarea:hover {
+    border-color: #2d3640 ;
+}
+
+.comments-form textarea:focus {
+    border-color: #2d3640 ;
+}
+
+.comments-form button {
+    background-color: #f4f5f7;
+    border: 2px solid  #2d3640;
+    color: #2d3640;
+    float: right;
+    transition: 0.8s;
+    padding: 10px 16px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.comments-form button:hover {
+    background-color: #2d3640;
+    color: #f4f5f7;
+}
+
+.comments-item {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 20px;
+    border: 2px solid #EC7063;
+    margin-bottom: 20px;
+}
+
+.comments-item h2 {
+    font-weight: normal;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.comments-item p {
+    text-indent: 10px;
+    text-align: justify;
+}
+
+/* Task Create&Edit */
+.task-edit-header {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    background-color: #2d3640;
+    text-align: left;
+    font-size: 24px;
+    color: #f4f5f7;
+    padding: 24px;
+}
+
+.task-edit-content {
+    background-color: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+    padding: 30px;
+    transition: 0.8s;
+    cursor: pointer;
+    margin-bottom: 60px;
+    overflow: auto;
+}
+
+.task-edit-content input {
+    padding: 10px 0px;
+    border-bottom: 2px solid #d2d3d6;
+    width: 100%;
+    transition: 0.8s;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.task-edit-content input:hover {
+    border-color: #2d3640;
+}
+
+.task-edit-content input:focus {
+    border-color: #2d3640;
+}
+
+.task-edit-content select {
+    padding: 10px 0px;
+    border-bottom: 2px solid #d2d3d6;
+    width: 100%;
+    transition: 0.8s;
+    margin-bottom: 20px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.task-edit-content textarea {
+    padding: 10px 0px;
+    border-bottom: 2px solid #d2d3d6;
+    width: 100%;
+    transition: 0.8s;
+    margin-bottom: 20px;
+    resize: none;
+    font-size: 14px;
+}
+
+.task-edit-content textarea:hover {
+    border-color: #2d3640;
+}
+
+.task-edit-content textarea:focus {
+    border-color: #2d3640;
+}
+
+.task-edit-content button {
+    float: right;
+    padding: 10px 14px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 10px;
+    transition: 0.8s;
+    background-color: #f4f5f7;
+    border: 1px solid #2d3640;
+    color: #2d3640;
+    margin-left: 10px;
+}
+
+.task-edit-content button:hover {
+    color: #f4f5f7;
+    background-color: #2d3640;
+}
+
+.task-edit-content .delete {
+    padding: 10px 18px !important;
+    border-color: #EC7063 !important;
+}
+
+.task-edit-content .delete:hover {
+    background-color: #EC7063 !important;
+}
+
+/* Comments */
+.comments-header {
+    border-radius: 20px;
+    background-color: #2d3640;
+    text-align: left;
+    font-size: 24px;
+    color: #f4f5f7;
+    padding: 24px;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.comments-header button {
+    background-color: #f4f5f7;
+    color: #2d3640;
+    border-radius: 10px;
+    padding: 10px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.comments-header-buttons {
+    margin-bottom: 20px;
+}
+
+.comments-header-buttons button {
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10px;
+    padding: 10px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.8s;
+    width: 100%;
+}
+
+.comments-header-buttons button {
+    border-color: #EC7063;
+}
+
+.comments-header-buttons button:hover {
+    background-color: #EC7063;
+    color: #f4f5f7;
+}
+
+.comments-search {
+    margin-bottom: 40px;
+    display: flex;
+    width: 100%;
+}
+
+.comments-search input {
+    font-size: 12px;
+    padding: 10px 12px;
+    width: 100%;
+}
+
+.comments-search button {
+    background-color: #2d3640;
+    color: #f4f5f7;
+    padding: 10px 12px;
+    font-size: 12px;
+    max-width: 80px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.comments-item {
+    background-color: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+    padding: 30px;
+    transition: 0.8s;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.comments-item:hover {
+    border-color: #EC7063;
+}
+
+.comments-item h2 {
+    font-weight: normal;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.comments-item h3 {
+    display: block;
+    text-align: justify;
+    font-size: 14px;
+}
+
+/* Comment Edit */
+.comment-edit-header {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    background-color: #2d3640;
+    text-align: left;
+    font-size: 24px;
+    color: #f4f5f7;
+    padding: 24px;
+}
+
+.comment-edit-content {
+    background-color: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+    padding: 30px;
+    transition: 0.8s;
+    cursor: pointer;
+    margin-bottom: 60px;
+    overflow: auto;
+}
+
+.comment-edit-content input {
+    padding: 10px 0px;
+    border-bottom: 2px solid #d2d3d6;
+    width: 100%;
+    transition: 0.8s;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.comment-edit-content input:hover {
+    border-color: #2d3640;
+}
+
+.comment-edit-content input:focus {
+    border-color: #2d3640;
+}
+
+.comment-edit-content select {
+    padding: 10px 0px;
+    border-bottom: 2px solid #d2d3d6;
+    width: 100%;
+    transition: 0.8s;
+    margin-bottom: 20px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.comment-edit-content textarea {
+    padding: 10px 0px;
+    border-bottom: 2px solid #d2d3d6;
+    width: 100%;
+    transition: 0.8s;
+    margin-bottom: 20px;
+    resize: none;
+    font-size: 14px;
+}
+
+.comment-edit-content textarea:hover {
+    border-color: #2d3640;
+}
+
+.comment-edit-content textarea:focus {
+    border-color: #2d3640;
+}
+
+.comment-edit-content button {
+    float: right;
+    padding: 10px 14px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 10px;
+    transition: 0.8s;
+    background-color: #f4f5f7;
+    border: 1px solid #2d3640;
+    color: #2d3640;
+    margin-left: 10px;
+}
+
+.comment-edit-content button:hover {
+    color: #f4f5f7;
+    background-color: #2d3640;
+}
+
+.comment-edit-content .delete {
+    padding: 10px 18px !important;
+    border-color: #EC7063 !important;
+}
+
+.comment-edit-content .delete:hover {
+    background-color: #EC7063 !important;
+}
+
+.comment-edit-buttons {
+    display: flex;
+}
+
+.comment-edit-buttons button:first-child {
+    border-color: #EC7063 !important;
+}
+
+.comment-edit-buttons button:first-child:hover {
+    background-color: #EC7063 !important;
+}
+
+.comment-edit-buttons button:last-child {
+    margin-left: auto;
+}
+
+.tabs-header {
+    background-color: #2d3640;
+    border: 2px solid #2d3640;
+    border-radius: 20px;
+    display: flex;
+    align-items: stretch;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.tabs-header button {
+    background-color: #f4f5f7;
+    padding: 10px 12px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+
+.tabs-header button.active {
+    background-color: #2d3640;
+    color: #f4f5f7;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

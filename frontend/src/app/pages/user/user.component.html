@@ -1,0 +1,14 @@
+<div class="user-form">
+    <div class="container">
+        <div class="user-form-header">
+            Add user
+        </div>
+        <div class="user-form-content">
+            <input type="text" placeholder="Name" [(ngModel)]="userRequest.name">
+            <input type="text" placeholder="Surname" [(ngModel)]="userRequest.surname">
+            <input type="text" placeholder="Title" [(ngModel)]="userRequest.title">
+
+            <button (click)="create()">Save</button>
+        </div>
+    </div>
+</div>

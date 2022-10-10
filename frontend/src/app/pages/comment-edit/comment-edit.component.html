@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="comment-edit-header">
+        Edit Comment
+    </div>
+    <div class="comment-edit-content">
+        <input type="text" 
+            placeholder="Commenter" 
+            [(ngModel)]="commentRequest.userName" disabled>
+        <textarea cols="30" rows="10" 
+            placeholder="Comment" 
+            [(ngModel)]="commentRequest.content"></textarea>
+        <div class="comment-edit-buttons">
+            <button (click)="goTask()">Go to Task</button>
+            <button (click)="updateComment()">Save</button>
+        </div>        
+    </div>
+</div>

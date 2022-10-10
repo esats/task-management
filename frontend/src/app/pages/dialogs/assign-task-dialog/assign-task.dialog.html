@@ -1,0 +1,16 @@
+<h2 mat-dialog-title>Assing User</h2>
+<mat-dialog-content>You can assign user to the task here</mat-dialog-content>
+
+<mat-form-field appearance="fill" style="margin-top: 20px; width: 100%;">
+    <mat-label>Assigned User</mat-label>
+    <mat-select [(ngModel)]="assignRequest.userId">
+        <mat-option *ngFor="let user of users" [value]="user.id">
+          {{user.name}} {{user.surname}}
+        </mat-option>
+    </mat-select>
+</mat-form-field>
+
+<mat-dialog-actions align="end">
+    <button mat-button (click)="closeDialog()">Cancel</button>
+    <button mat-button (click)="assign()">Save</button>
+</mat-dialog-actions>
