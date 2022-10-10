@@ -12,7 +12,7 @@ And run the project.\
 \
 frontend:\
 \
-When backend ran copy url and paste to RestApiService.\
+When backend ran copy url and paste to in the frontend project to RestApiService.ts
 \
 Then:\
 \
