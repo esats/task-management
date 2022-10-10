@@ -5,7 +5,7 @@
 \
 How to run:\
 \
-* Add-migration First.\
+* Add-migration First.
 * Update-database\
 \
 And run the project.\
