@@ -1,4 +1,5 @@
-1- Written by backend: .net 5. frontend: angular 14
+1- Written by backend: .net 5.
+2- frontend: angular 14
 2- Database: sqlite. \
 3- localhost:PORT/swagger\
 \
